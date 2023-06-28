@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    background-image: url('background.jpg');
+}
+
+.heading{
+    font-size: 2rem;
+    color: cyan;
+    background: grey;
+    border-radius: 12px;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 20px;
+}
+
+.navbar{
+    display: flex;
+    height: 102px;
+    margin: 0;
+}
+
+.navbar li{
+    margin: 0 12px;
+}
+
+
+
+
+
+.middleleft{
+    width: 20%;
+    background-color: rgb(51, 51, 47);
+    border-radius: 8px;
+    margin: 20px;
+    height: 100%;
+    padding-left: 10px;
+}
+
+.middleright{
+    width: 80%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.year{
+    color: cyan;
+}
+
+.display-none{
+    display: none;
+}
+
+.color-li{
+    color: cyan;
+}
+
+.head{
+    background-color: rgb(0, 7, 8);
+}
+
+.carousel-margin{
+    margin: 20px;
+}
+
+.wrapper{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: -49px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li{
+    list-style: none;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #952f07;
+    position: relative;
+    top: 0;
+    animation: slide 4s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    background: rgb(0, 7, 8);
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #952f07;
+    animation: typing 1s steps(12) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
